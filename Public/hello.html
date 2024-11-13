@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Daily Coding Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: blue;
+            border: yellow;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #007BFF;
+        }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Daily Coding Tracker</h1>
+        <p>Enhance your skills!</p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <table>
+            <th>
+                <h2>This Week</h2>
+            </th>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th> 
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="monday"></td>
+                <td><input type="checkbox" name="tuesday"></td>
+                <td><input type="checkbox" name="wednesday"></td>
+                <td><input type="checkbox" name="thursday"></td>
+                <td><input type="checkbox" name="friday"></td>
+                <td><input type="checkbox" name="saturday"></td>
+                <td><input type="checkbox" name="sunday"></td>
+        </table>
+
+        <div class="btn-group">
+            <a href="home.html" class="btn">Back to home</a>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+    </div>
+</body>
+</html>
